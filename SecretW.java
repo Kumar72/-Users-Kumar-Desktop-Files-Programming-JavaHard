@@ -1,21 +1,24 @@
-package JavaHard;
+package Exercises;
 
 import java.util.Scanner;
 
 public class SecretW {
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
-		
-		int age = 25;
-		double allure = 7.5;
-		boolean onGuestList = false;
-		String gender = "F";
+		String secret = "Please", guess;
 
-		if (onGuestList || age >= 21 || (gender.equals("F") && allure >= 8)) {
-			System.out.println("You are allowed to enter the club.");
+		System.out.print("What's the secret word? ");
+		guess = keyboard.next();
+
+		if (guess.equals(secret)) {
+			System.out.println("That's correct!");
 		}
 		else {
-			System.out.println("You are not allowed to enter the club.");
+			System.out.println("No, the secret word isn't \""+ guess +".\"");			
 		}
+		if (guess == secret) {
+			System.out.println("This will never ever show, no matter what.");
+		}
+		
 	}
 }
