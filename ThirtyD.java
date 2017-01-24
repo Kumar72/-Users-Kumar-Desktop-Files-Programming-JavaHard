@@ -38,8 +38,7 @@ public class ThirtyD {
 				break;						
 			default: monthName = "error";
 			}
-	/* 	Thirty days hath September
-		April, June and November
+	/* 	Thirty days hath September, April, June, and November
 		All the rest have thirty-one
 		Except the second month alone....
 	*/
@@ -59,3 +58,16 @@ public class ThirtyD {
 
 	}
 }
+
+/*
+	Inside the body of switch are several case x:'s followed by code,
+	you can have as many lines BUT you're not allowed to declare any
+	var inside the switch statement. 
+	Also, after all the code we enter the keyword break - marks the end of a case
+
+	What happens is that the computer onces gets the input, then it 
+	looks through the switch until it finds a case that matches the input
+
+	a case (or multiple cases) will be executed unless a break is reached (ex line 45-50)
+	
+*/
