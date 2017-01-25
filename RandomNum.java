@@ -16,6 +16,9 @@ public class RandomNum {
 			System.out.println("SCISSORS");
 		}
 
+
+//math.random is a built in func. randomizes between (x, y) 
+//readas: origin #(smallest #) + (int)(# of rand int in range*Math.random());
 		// pick four random integers each 1-10
 		a = 1 + (int)(10*Math.random() );
 		b = 1 + (int)(10*Math.random() );
@@ -59,6 +62,24 @@ public class RandomNum {
 		System.out.println("0-9.99:\t" +r);
 		System.out.println("0-9:\t" +(int)r);
 		System.out.println("1-10:\t" + (1+(int)r));
+
+//Study Drill 1
+		//3 random int from 1-3
+		a = 1 + (int)(3*Math.random());
+		b = 1 + (int)(3*Math.random());
+		c = 1 + (int)(3*Math.random());
+		System.out.println("Three random # between 1-3:\t "+a+"\t"+b+"\t"+c);
+
+		//3 random int from 5-10
+		a = 5 + (int)(6*Math.random());
+		b = 5 + (int)(6*Math.random());
+		c = 5 + (int)(6*Math.random());
+		System.out.println("Three random # between 5-10:\t "+a+"\t"+b+"\t"+c);
+
 	}
 }
 
+// ex. get a random # betwee 2-13 will be writen as...
+// smalles # = 2
+// range = 12 (including 2 and 13)
+//thus, var = 2 + (int)(12*Math.random());
